@@ -1,3 +1,7 @@
+#Author: Yenlox 
+#Add me on steam as 'Y3nlox'.
+#You are welcome to donate a skins.
+
 import  pyautogui
 from twisted.internet import task, reactor
 import pynput
