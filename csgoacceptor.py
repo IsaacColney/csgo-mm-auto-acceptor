@@ -1,11 +1,11 @@
 #Author: Yenlox 
 #Add me on steam as 'Y3nlox'.
 #You are welcome to donate a skins.
-
 import  pyautogui
-from twisted.internet import task, reactor
+import time
 import pynput
 from pynput import keyboard
+from pynput.keyboard import Key, Controller
 
 
 print(pyautogui.size())
@@ -13,19 +13,13 @@ print('Enter your in game resolution')
 height = int(input('Enter the Height:  '))
 width = int(input('Enter the Width:  '))
 
-timeout = 2
-
 
 def doWork():
     pyautogui.click(width/2,height/1.8)
-    timeout = 1
+    time.sleep(1.7)
     pyautogui.click(width/2.01,height/1.8)
     pass
 
-
-l = task.LoopingCall(doWork)
-l.start(timeout)  #call every sixty seconds
-
-reactor.run()
-
-
+while (True):
+    doWork()
+    
