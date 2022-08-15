@@ -3,7 +3,6 @@
 #You are welcome to donate a skins.
 import  pyautogui
 import time
-import pynput
 
 print(pyautogui.size())
 print('Enter your in game resolution')
